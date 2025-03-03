@@ -14,25 +14,33 @@
 
     <title>Kaffeehaus Fabelhaft</title>
   </head>
-  <body class="bg-[#FFE6C6]">
-    <nav class="bg-[#884946] flex justify-around">
+  <body class="bg-khy">
+    <nav class="bg-khr flex justify-around">
       <button class="cursor-pointer hamburger move transition-transform">
         <img loading="lazy" src="images/hamburger.svg" alt="" />
       </button>
       <h1
-        class="font-nav text-xl text-nowrap text-center text-[#FFE6C6] p-1 pl-8 pr-8 tracking-[0.075em]"
+        class="font-nav text-xl text-nowrap text-center text-khy p-1 pl-8 pr-8 tracking-[0.075em]"
       >
         Hattiesburg, MS
       </h1>
-      <img
-        loading="lazy"
-        class="fill-[#FFE6C6]"
-        src="images/coffee.svg"
-        alt=""
-      />
+      <img loading="lazy" class="fill-khy" src="images/coffee.svg" alt="" />
     </nav>
 
     <main class="font-nav">
+      <ul
+        class="space-y-5 animate-fadeinfast text-2xl menu p-2 m-0 fixed bg-khr flex flex-col justify-evenly font-nav text-khy text-center hidden z-10"
+      >
+        <a href="index.html">
+          <li>Home</li>
+        </a>
+        <a href="menu.html">
+          <li>Menu</li>
+        </a>
+        <a href="#">
+          <li>Events</li>
+        </a>
+      </ul>
       <div class="p-2 flex flex-col space-y-5">
         <div class="flex flex-col space-y-5">
           <ul>
@@ -161,14 +169,23 @@
           <ul>
             <h1 class="text-center"><strong>Syrups</strong> - $0.50</h1>
             <li class="text-center pl-6 pr-6">
-              Amaretto, Blackberry, Blueberry, Bourbon Caramel, Brown Sugar and Cinnamon, Butter Rum, Butter Pecan, Cheesecake, Classic Hazelnut, English Toffee, Irish Crea, French Vanilla, Gingerbread, Lavender, Lemon, Lime, Maple, Peanut Butter, Peppermint, Red Raspberry, Salted Caramel, Shortbread, Strawberry, Toasted Marshmallow, Vanilla, Vanilla Bean, Vanilla Salt
+              Amaretto, Blackberry, Blueberry, Bourbon Caramel, Brown Sugar and
+              Cinnamon, Butter Rum, Butter Pecan, Cheesecake, Classic Hazelnut,
+              English Toffee, Irish Crea, French Vanilla, Gingerbread, Lavender,
+              Lemon, Lime, Maple, Peanut Butter, Peppermint, Red Raspberry,
+              Salted Caramel, Shortbread, Strawberry, Toasted Marshmallow,
+              Vanilla, Vanilla Bean, Vanilla Salt
             </li>
           </ul>
 
           <ul>
-            <h1 class="text-center"><strong>Sugar Free Syrups</strong> - $0.50</h1>
+            <h1 class="text-center">
+              <strong>Sugar Free Syrups</strong> - $0.50
+            </h1>
             <li class="text-center pl-6 pr-6">
-              Brown Sugar Cinnamon, Chocolate, Coconut, Hazelnut, English Toffee, French Vanilla, Orange, Peanut Butter, Red Raspberry, Salted Caramel, Vanilla, Vanilla Bean, White Chocolate
+              Brown Sugar Cinnamon, Chocolate, Coconut, Hazelnut, English
+              Toffee, French Vanilla, Orange, Peanut Butter, Red Raspberry,
+              Salted Caramel, Vanilla, Vanilla Bean, White Chocolate
             </li>
           </ul>
 
@@ -197,32 +214,45 @@
             <li>- $4.00 Mr. Sippi</li>
             <li>- $4.00 Mr. Nütrl</li>
           </ul>
-
         </div>
       </div>
     </main>
 
-    <ul
-      class="menu p-1 m-0 fixed top-0 left-0 h-screen bg-[#884946] transform -translate-x-full transition-transform flex flex-col justify-evenly font-nav text-[#FFE6C6] text-center"
-    >
-      <a href="index.html">
-        <li>Home</li>
-      </a>
-      <a href="menu.html">
-        <li>Menu</li>
-      </a>
-      <a href="#">
-        <li>Events</li>
-      </a>
-    </ul>
-
     <script>
-      document
-        .querySelector(".hamburger")
-        .addEventListener("click", function () {
-          document.querySelector(".menu").classList.toggle("translate-x-0");
-          document.querySelector(".move").classList.toggle("translate-x-full");
-        });
+      document.querySelector(".hamburger").addEventListener("click", shownav);
+
+      function shownav(e) {
+        document.querySelector(".menu").classList.toggle("hidden");
+      }
     </script>
   </body>
+
+  <footer class="text-khy bg-khr text-sm">
+    <div class="h-20 p-4">
+      <p>Kaffeehaus Fabelhaft</p>
+      <p>336 N 25th Ave, Hattiesburg, Mississippi 39401</p>
+      <p>(601) 705-9405</p>
+    </div>
+    <div class="flex w-screen justify-between p-4">
+      <div class="flex items-center text-center space-x-2">
+        <a
+          href="https://www.facebook.com/p/Kaffeehaus-Fabelhaft-100089285530508/"
+          ><img
+            class="w-8"
+            src="images/facebook.png"
+            alt="Link to the Kaffeehaus Fabelhaft Facebook page."
+        /></a>
+        <p>Kaffeehaus Fabelhaft</p>
+      </div>
+      <div class="flex items-center text-center space-x-2">
+        <a href="https://www.instagram.com/kaffeehaus_fabelhaft/"
+          ><img
+            class="w-8"
+            src="images/instagram.png"
+            alt="Link to the Kaffeehaus Fabelhaft Instagram page."
+        /></a>
+        <p>@kaffeehaus_fabelhaft</p>
+      </div>
+    </div>
+  </footer>
 </html>

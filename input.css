@@ -5,6 +5,10 @@
     --font-nav: "Chicle", "serif";
     --animate-fadein: fadein 2.5s ease-in-out;
     --animate-fadeinfast: fadein 0.25s ease-in-out;
+    --color-khy: #FFE6C6;
+    --color-khr: #884946;
+    --color-khb: #492821;
+
 
     @keyframes fadein {
         0% {
