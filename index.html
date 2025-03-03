@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chicle&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Kaffeehaus Fabelhaft</title>
+  </head>
+  <body class="bg-[#492821]">
+    <nav class="bg-[#884946] flex justify-around">
+      <button class="cursor-pointer hamburger move transition-transform">
+        <img loading="lazy" src="images/hamburger.svg" alt="" />
+      </button>
+      <h1
+        class="font-nav text-xl text-nowrap text-center text-[#FFE6C6] p-1 pl-8 pr-8 tracking-[0.075em]"
+      >
+        Hattiesburg, MS
+      </h1>
+      <img
+        loading="lazy"
+        class="fill-[#FFE6C6]"
+        src="images/coffee.svg"
+        alt=""
+      />
+    </nav>
+    <main>
+      <ul
+        class="space-y-5 animate-fadeinfast text-2xl menu p-2 m-0 fixed bg-[#884946] flex flex-col justify-evenly font-nav text-[#FFE6C6] text-center hidden z-10"
+      >
+        <a href="index.html">
+          <li>Home</li>
+        </a>
+        <a href="menu.html">
+          <li>Menu</li>
+        </a>
+        <a href="#">
+          <li>Events</li>
+        </a>
+      </ul>
+      <div class="relative">
+        <img
+          loading="lazy"
+          class="min-w-screen h-auto"
+          src="images/background.jpg"
+          alt="Art from a German fairytale."
+        />
+        <img
+          loading="lazy"
+          class="animate-fadein absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 w-64 h-auto"
+          src="images/logo.png"
+          alt="The Kaffeehaus Fabelhaft logo."
+        />
+        <img
+          loading="lazy"
+          class="absolute min-w-screen top-0"
+          src="images/scallop.png"
+          alt=""
+        />
+      </div>
+
+      <img
+        loading="lazy"
+        class="border-[#492821] border-6 border-l-0 border-r-0"
+        src="images/checkerboard.png"
+        alt="Checkerboard."
+      />
+
+      <div
+        class="flex flex-col justify-center min-w-screen h-auto bg-[url('images/cork.jpg')]"
+      >
+        <img loading="lazy" src="images/sign.png" alt="" />
+        <div>
+          <div class="flex justify-evenly items-center">
+            <a
+              class="p-4 transition-transform hover:rotate-2 hover:scale-105"
+              href="menu.html#coffee"
+              ><img loading="lazy" class="" src="images/polaroid1.png" alt=""
+            /></a>
+            <a
+              class="p-4 transition-transform hover:rotate-2 hover:scale-105"
+              href="menu.html#beer"
+              ><img loading="lazy" class="" src="images/polaroid2.png" alt=""
+            /></a>
+          </div>
+          <div class="flex justify-evenly items-center">
+            <a
+              class="p-4 transition-transform hover:rotate-2 hover:scale-105"
+              href="menu.html#food"
+              ><img loading="lazy" class="" src="images/polaroid3.png" alt=""
+            /></a>
+            <a
+              class="p-4 transition-transform hover:rotate-2 hover:scale-105"
+              href="#"
+              ><img loading="lazy" class="" src="images/polaroid4.png" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="bg-cover bg-[url('images/naturalshape.png')] space-y-4 flex flex-col items-center text-center font-nav text-2xl text-[#FFE6C6]"
+      >
+        <img
+          loading="lazy"
+          class="min-w-screen z-1"
+          src="images/corkscallop.png"
+          alt=""
+        />
+
+        <img class="w-2/3 h-auto" src="images/cuckoo.png" alt="" />
+
+        <div class="pb-15">
+          <h1>Hours</h1>
+          <ul>
+            <li>Sunday: 8 AM–6 PM</li>
+            <li>Mon-Tue: 7 AM–5 PM</li>
+            <li>Wed-Thurs: 7 AM–10 PM</li>
+            <li>Fri-Sat: 7 AM–1:30 AM</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class=""></div>
+    </main>
+
+    <footer class="text-[#FFE6C6] bg-[#884946] text-sm">
+      <div class="h-20 p-4">
+        <p>Kaffeehaus Fabelhaft</p>
+        <p>336 N 25th Ave, Hattiesburg, Mississippi 39401</p>
+        <p>(601) 705-9405</p>
+      </div>
+      <div class="flex w-screen justify-between p-4">
+        <div class="flex items-center text-center space-x-2"><a href=""><img class="w-8" src="images/facebook.png" alt="Link to the Kaffeehaus Fabelhaft Facebook page."></a>
+        <p>Kaffeehaus Fabelhaft</p></div>
+        <div class="flex items-center text-center space-x-2"><a href=""><img class="w-8" src="images/instagram.png" alt="Link to the Kaffeehaus Fabelhaft Instagram page."></a>
+        <p>@kaffeehaus_fabelhaft</p></div>
+      </div>
+    </footer>
+
+    <script>
+      document
+        .querySelector(".hamburger")
+        .addEventListener("click", shownav);
+
+      function shownav(e) {
+        document.querySelector(".menu").classList.toggle("hidden");
+    }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@theme {
+    --bg-a: url('images/background.jpg');
+    --font-nav: "Chicle", "serif";
+    --animate-fadein: fadein 2.5s ease-in-out;
+    --animate-fadeinfast: fadein 0.25s ease-in-out;
+
+    @keyframes fadein {
+        0% {
+            opacity: 0.0;
+        }
+
+        20% {
+            opacity: 0.2;
+        }
+
+        100% {
+            opacity: 1.0;
+        }
+    }
+
+    @keyframes fadeinfast {
+        0% {
+            opacity: 0.0;
+        }
+
+        100% {
+            opacity: 1.0;
+        }
+    }
+}
